@@ -16,16 +16,16 @@ $(document).ready(function() {
 
 	$(document).on("click",".circle",function() {
 
-		// if(! $("div").hasClass("popped")) {
-		// 	console.log("pop")
+		if(! $(this).hasClass("popped")) {
+
 			//Pop!
-			$('.sound').click(function() {
-	    		audio.play();
-			});
+	    	audio.play();
 
-		// $(this).addClass("popped");
+			$(this).addClass("popped").removeClass("sound");
 
-		$(this).empty().append("<div class='size white star popped'></div>");
+			$(this).empty().append("<div class='size white star popped'></div>");
+
+		}
 
 		if($(".star").length > 237) {
 			location.reload();

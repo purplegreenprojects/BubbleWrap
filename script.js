@@ -22,7 +22,6 @@ $(document).ready(function() {
 			$('.sound').click(function() {
 	    		audio.play();
 			});
-		}
 
 		// $(this).addClass("popped");
 
@@ -30,7 +29,7 @@ $(document).ready(function() {
 
 		if($(".star").length > 237) {
 			location.reload();
-		}
+		};
 
 	});
 
